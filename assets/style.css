@@ -1,0 +1,196 @@
+/* Food Verse AI - Modern Design System */
+
+:root {
+  --primary: #10B981;
+  --primary-dark: #059669;
+  --secondary: #3B82F6;
+  --accent-amber: #F59E0B;
+  --accent-rose: #EF4444;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --border-color: #E2E8F0;
+  --text-dark: #1E293B;
+  --text-muted: #64748B;
+}
+
+/* App Header & Hero */
+.hero-banner {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #064E3B 100%);
+  padding: 1.8rem 2rem;
+  border-radius: 16px;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0;
+  background: linear-gradient(90deg, #34D399 0%, #60A5FA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  color: #CBD5E1;
+  margin-top: 0.4rem;
+  font-weight: 400;
+}
+
+/* Glassmorphic Metric Cards */
+.metric-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+
+.metric-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.08);
+}
+
+.metric-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-top: 0.2rem;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748B;
+}
+
+/* Health & Status Badges */
+.badge-pill {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.badge-green {
+  background-color: #D1FAE5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+}
+
+.badge-amber {
+  background-color: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #FDE68A;
+}
+
+.badge-rose {
+  background-color: #FEE2E2;
+  color: #991B1B;
+  border: 1px solid #FECACA;
+}
+
+.badge-blue {
+  background-color: #DBEAFE;
+  color: #1E40AF;
+  border: 1px solid #BFDBFE;
+}
+
+/* Demo Mode Callout Banner */
+.demo-banner {
+  background: linear-gradient(90deg, #FEF3C7 0%, #FFFBEB 100%);
+  border-left: 5px solid #F59E0B;
+  padding: 0.85rem 1.2rem;
+  border-radius: 8px;
+  color: #78350F;
+  margin-bottom: 1.2rem;
+  font-size: 0.92rem;
+}
+
+/* Live AI Callout Banner */
+.live-banner {
+  background: linear-gradient(90deg, #D1FAE5 0%, #ECFDF5 100%);
+  border-left: 5px solid #10B981;
+  padding: 0.85rem 1.2rem;
+  border-radius: 8px;
+  color: #064E3B;
+  margin-bottom: 1.2rem;
+  font-size: 0.92rem;
+}
+
+/* Violation Card */
+.violation-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-left: 6px solid #EF4444;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.violation-card.medium {
+  border-left-color: #F59E0B;
+}
+
+.violation-card.low {
+  border-left-color: #3B82F6;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 1.4rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Disclaimer Callout */
+.disclaimer-box {
+  background-color: #F8FAFC;
+  border: 1px dashed #CBD5E1;
+  border-radius: 10px;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.82rem;
+  color: #64748B;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Modern Tab Enhancements */
+.stTabs [data-baseweb="tab-list"] {
+  gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+  height: 48px;
+  white-space: pre-wrap;
+  background-color: #F1F5F9;
+  border-radius: 8px 8px 0px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.stTabs [aria-selected="true"] {
+  background-color: #E2E8F0;
+  color: #059669;
+}
